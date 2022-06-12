@@ -20,7 +20,7 @@ main{
    /* flex-direction: row-reverse; */
 
     /* top to bottom*/
-    flex-direction:column;
+   /* flex-direction:column; */
 
     /*bottom to top*/
    /* flex-direction: column-reverse;*/
