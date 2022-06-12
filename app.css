@@ -1,0 +1,38 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+main{
+    width:90%;    
+    margin: 0 auto;
+   
+}
+.container{
+    background: #CCC;
+    height:300px;
+    width:100%;
+    display:flex;
+    
+    /* left to right. this is the default*/
+    /*flex-direction: row; */
+
+    /*right to left. reverses the row*/
+   /* flex-direction: row-reverse; */
+
+    /* top to bottom*/
+    flex-direction:column;
+
+    /*bottom to top*/
+   /* flex-direction: column-reverse;*/
+}
+.container div{width:150px;height:150px;}
+.container div:nth-child(1){background-color: red;}
+.container div:nth-child(2){background-color: orange;}
+.container div:nth-child(3){background-color: yellow;}
+.container div:nth-child(4){background-color: green;}
+.container div:nth-child(5){background-color: indigo;}
+h1{
+    font-weight: 400;
+    font-size:2em;
+    padding: .5em 0 .3em;
+}
