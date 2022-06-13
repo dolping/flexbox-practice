@@ -58,6 +58,17 @@ main{
     align-items: baseline
    */
    align-items:center;
+
+   /* ================== ALIGN CONTENT . Align content. use to control or distributes space along CROSS axis 
+   but only if we have multiple rows or columns. It only works if we have flex-wrap ! 
+   https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+   =========
+   
+   align-content: start;
+   align-content: center;
+   align-content: space-between;
+   align-content: space-around;
+   */
 }
 .container div{
     width:150px;
