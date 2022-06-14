@@ -69,6 +69,8 @@ main{
    align-content: space-between;
    align-content: space-around;
    */
+
+  
 }
 .container div{
     width:150px;
@@ -86,6 +88,17 @@ main{
 .container div:nth-child(3){background-color: yellow;}
 .container div:nth-child(4){background-color: green;}
 .container div:nth-child(5){background-color: indigo;}
+
+ /* ALIGN SELF. somewhat like align-items but only applies to particular element
+ https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+ */
+.container div:nth-of-type(2){/*align-self:end;*/}
+
+/*
+Flex basis. sets the initial main size of a flex item https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+Flex grow. takes extra spaces of flex element
+Flex shrink. it items are larger than the container, they shrink according to flex-shrink
+*/
 h1{
     font-weight: 400;
     font-size:2em;
