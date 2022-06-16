@@ -122,3 +122,40 @@ h1{
     background:green;
     flex: 2 1 800px; /* shorthand for flex-grow | flex-shrink | flex-basis*/
 }
+
+/* ======= NAV with flexbox============= */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+nav ul{
+    display: flex;
+    flex-grow: 1;
+    max-width: 50%;
+    justify-content: space-around;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        align-items: center;        
+    }
+    nav ul{
+        flex-direction: column;
+        align-items:center;
+    }
+    nav a{padding-bottom: 10px; display: block;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
