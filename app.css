@@ -104,3 +104,21 @@ h1{
     font-size:2em;
     padding: .5em 0 .3em;
 }
+
+/*====================== DEMO FOR FLEX BASIS, GROW, SHRINK*/
+.main-flex{
+    width:80%;
+    margin:0 auto;
+    border:2px solid black;
+    height: 500px;
+    display:flex;
+    margin-top:2rem;
+}
+.main-flex .sidebar{
+    background:orange;
+    flex: 1 2 300px; /* shorthand for flex-grow | flex-shrink | flex-basis*/
+}
+.main-flex .maincontent{
+    background:green;
+    flex: 2 1 800px; /* shorthand for flex-grow | flex-shrink | flex-basis*/
+}
